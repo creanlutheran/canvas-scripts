@@ -6,7 +6,7 @@
 // @include      https://*.instructure.com/courses/*/assignments/*/edit
 // @include      https://*.instructure.com/courses/*/assignments/new
 // @include	 https://*.instructure.com/courses/*/assignments/new?quiz_lti
-// @include      https://*.instructure.com/courses/*/assignments/edit?quiz_lti
+// @include      https://*.instructure.com/courses/*/assignments/*/edit?quiz_lti
 // @include      https:/*.instructure.com/courses/*/discussion_topics/new
 // @include      https://*.instructure.com/courses/*/discussion_topics/new
 // @include      https://*.instructure.com/courses/*/discussion_topics/*/edit
