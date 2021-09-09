@@ -3,9 +3,15 @@
 // @version      1.0
 // @description  Allows user to set default due date times in Canvas
 // @author       Ben Fisher (ben.fisher@creanlutheran.org)
-// @include      https:/*.instructure.com/courses/*/assignments/*
-// @include      https:/*.instructure.com/courses/*/discussion_topics/*
-// @include      https:/*.instructure.com/courses/*/quizzes/*
+// @include      https://*.instructure.com/courses/*/assignments/*/edit
+// @include      https://*.instructure.com/courses/*/assignments/new
+// @include	 https://*.instructure.com/courses/*/assignments/new?quiz_lti
+// @include      https://*.instructure.com/courses/*/assignments/edit?quiz_lti
+// @include      https:/*.instructure.com/courses/*/discussion_topics/new
+// @include      https://*.instructure.com/courses/*/discussion_topics/new
+// @include      https://*.instructure.com/courses/*/discussion_topics/*/edit
+// @include      https://*.instructure.com/courses/*/quizzes/*/edit
+// @include      https://*.instructure.com/courses/*/quizzes/*/edit
 // @require      https://unpkg.com/dayjs@1.8.21/dayjs.min.js
 
 
