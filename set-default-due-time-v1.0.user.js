@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         SetDefaultDueTimes
+// @name         Set4DefaultDueTimes
 // @version      0.1
-// @description  Allows user to set default due date times in Canvas
+// @description  Allows user to set 4 default due date time in Canvas
 // @author       Ben Fisher (ben.fisher@creanlutheran.org)
 // @include      https:/*.instructure.com/courses/*/assignments/*
 // @include      https:/*.instructure.com/courses/*/discussion_topics/*
@@ -26,8 +26,6 @@
 				$('input.DueDateInput[type=text').each(function() {
 					dueDate_ids.push(this.id);
 				});
-
-				alert(dueDate_ids);
 
 				$('.DueDateInput__Container ').each(function(i, obj) {
 					$(this).addClass(`existing_date_input_row_${dueDate_ids[i]}`);
@@ -72,8 +70,6 @@
 
 					for (let i = 0; i < dueTime12hrs.length; i++) {
 						$('.Container__DueDateRow-item').find('.DueDateInput__Container').last().append(`<input type="text" class="added_date_custom_picker_${lastRow_id_added}_${i}" readonly="readonly" value="${dueTime12hrs[i]}" style="background: #f5f5f5;color: #2d3b45; margin: 10px 5px 0px 0px; max-width: 75px; border: 1px solid rgb(199, 205, 209); border-radius: 3px; transition: background-color 0.2s ease-in-out 0s; display: inline-block; position: relative; padding: 8px 2px; font-size: 1rem; line-height: 20px; text-align: center; vertical-align: middle; text-decoration: none; overflow: hidden; text-shadow: none; user-select: none; cursor: pointer !important;">`);
-
-						alert("List of 12hr array" + dueTime12hrs);
 
 						$(`.added_date_custom_picker_${lastRow_id_added}_${i}`)
 							.hover(function() {
