@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Set4DefaultDueTimes
-// @version      0.1
-// @description  Allows user to set 4 default due date time in Canvas
+// @name         Set Canvas Default Due Times
+// @version      1.0
+// @description  Allows user to set default due date times in Canvas
 // @author       Ben Fisher (ben.fisher@creanlutheran.org)
 // @include      https:/*.instructure.com/courses/*/assignments/*
 // @include      https:/*.instructure.com/courses/*/discussion_topics/*
@@ -14,14 +14,14 @@
 
 		setTimeout(function() {
 
-
-
+            // change the times below to set default due date times
 			const dueTime12hrs = ["7:55am", "9:50am", "11:20am", "1:15pm"];
 
 			const dueTime24hrs = ["07:55", "09:50", "11:20", "13:15"];
 
 			var dueDate_ids = [];
 
+            // adds due date input ids to array
 			(function() {
 				$('input.DueDateInput[type=text').each(function() {
 					dueDate_ids.push(this.id);
@@ -34,6 +34,8 @@
 
 			})();
 
+
+            // loops through each existing due date input and adds all default due time input buttons to each due date input
 			for (let i = 0; i < dueTime12hrs.length; i++) {
 
 				for (let j = 0; j < dueTime12hrs.length; j++) {
@@ -60,7 +62,7 @@
 
 
 
-
+            // adds all default due time input buttons to each new due date input when +Add is clicked in Canvas
 			$("#add_due_date").click(function() {
 
 
