@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Set4DefaultDueTimes
+// @name         SetDefaultDueTimes
 // @version      0.1
-// @description  Allows user to set 4 default due date time in Canvas
+// @description  Allows user to set default due date times in Canvas
 // @author       Ben Fisher (ben.fisher@creanlutheran.org)
 // @include      https:/*.instructure.com/courses/*/assignments/*
 // @include      https:/*.instructure.com/courses/*/discussion_topics/*
