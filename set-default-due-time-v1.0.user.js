@@ -21,7 +21,7 @@
 
 			var dueDate_ids = [];
 
-            // adds due date input ids to array
+            // adds existing due date input ids to array
 			(function() {
 				$('input.DueDateInput[type=text').each(function() {
 					dueDate_ids.push(this.id);
@@ -36,7 +36,7 @@
 
 
             // loops through each existing due date input and adds all default due time input buttons to each due date input
-			for (let i = 0; i < dueTime12hrs.length; i++) {
+			for (let i = 0; i < dueDate_ids.length; i++) {
 
 				for (let j = 0; j < dueTime12hrs.length; j++) {
 
