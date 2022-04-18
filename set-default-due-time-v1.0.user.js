@@ -12,6 +12,14 @@
 // @include      https://*.instructure.com/courses/*/discussion_topics/*/edit
 // @include      https://*.instructure.com/courses/*/quizzes/*/edit
 // @include      https://*.instructure.com/courses/*/quizzes/*/edit
+// @include      https://canvas.*.edu/courses/*/assignments/*/edit
+// @include      https://canvas.*.edu/courses/*/assignments/new
+// @include      https://canvas.*.edu/courses/*/assignments/new?quiz_lti
+// @include      https://canvas.*.edu/courses/*/assignments/*/edit?quiz_lti
+// @include      https:/canvas.*.edu/courses/*/discussion_topics/new
+// @include      https://canvas.*.edu/courses/*/discussion_topics/new
+// @include      https://canvas.*.edu/courses/*/discussion_topics/*/edit
+// @include      https://canvas.*.edu/courses/*/quizzes/*/edit
 // @require      https://unpkg.com/dayjs@1.8.21/dayjs.min.js
 
 
